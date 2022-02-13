@@ -16,8 +16,7 @@ export type AddNewUserResponse = {
   userId: string;
 };
 
-export type GetUserInformation = Partial<Pick<AddNewUser, "api_key">> &
-  Pick<AddNewUserResponse, "userId">;
+export type GetUserInformation = Partial<Pick<AddNewUser, "api_key">> & Pick<AddNewUserResponse, "userId">;
 
 export type YesimUser = {
   id: string;
