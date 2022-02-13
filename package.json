@@ -1,0 +1,18 @@
+{
+  "name": "stayr-yesim",
+  "version": "1.0.0",
+  "description": "Api wrapper for yesim",
+  "main": "./dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build":"tsc"
+  },
+  "keywords": [
+    "YESIM"
+  ],
+  "author": "Yoeven, Narcisse",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.25.0"
+  }
+}
