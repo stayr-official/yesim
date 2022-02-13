@@ -1,6 +1,6 @@
 {
   "name": "@stayr-official/yesim",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Api wrapper for yesim",
   "main": "./dist/index.js",
   "types": "index.d.ts",
