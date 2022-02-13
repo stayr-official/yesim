@@ -94,7 +94,7 @@ const yesim = {
 
   misc: (authorize: () => Promise<GetAuthorizationTokenResponse>) => {
     return {
-      getCountryRate: async function () {
+      getCountryRate: async () => {
         const auth = await authorize();
         const response = await instance.get(
           `countries?api_key=${auth.api_key}`
@@ -106,7 +106,7 @@ const yesim = {
 
   account: (authorize: () => Promise<GetAuthorizationTokenResponse>) => {
     return {
-      getAccountInfo: async function (): Promise<AccountInformation> {
+      getAccountInfo: async (): Promise<AccountInformation> => {
         const auth = await authorize();
         const response = await instance.get(
           `/account?api_key=${auth.api_key}&debug_req=1`
