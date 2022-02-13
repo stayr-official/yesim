@@ -26,7 +26,7 @@ jobs:
         with:
          node-version: 14.x
       - name: build
-        run: | 
+      - run: | 
          yarn
          yarn build
          npm version prerelease --preid=ci-$GITHUB_RUN_ID --no-git-tag-version
