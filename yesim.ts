@@ -136,6 +136,7 @@ const Yesim = (data: {
 
   const password = data.password;
   const login = data.login;
+
   const secondKey = data.secondKey;
   const authorize = () => yesim.authorize({ password, login, secondKey });
   const user = yesim.user(authorize);
