@@ -1,18 +1,27 @@
 {
-  "name": "stayr-yesim",
-  "version": "1.0.0",
+  "name": "@stayr-official/yesim",
+  "version": "0.0.3",
   "description": "Api wrapper for yesim",
   "main": "./dist/index.js",
+  "types": "index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build":"tsc"
+    "build": "yarn format && tsc",
+    "format": "prettier --write **/*.ts"
   },
   "keywords": [
     "YESIM"
   ],
-  "author": "Yoeven, Narcisse",
+  "author": "Stayr",
   "license": "MIT",
   "dependencies": {
     "axios": "^0.25.0"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.17",
+    "prettier": "^2.5.1",
+    "ts-node": "^10.5.0",
+    "tsc": "^2.0.4",
+    "typescript": "^4.5.5"
   }
 }
