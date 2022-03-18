@@ -64,3 +64,10 @@ export type AccountInformation = {
   totalPeople: string;
   activeQr: string;
 };
+
+
+export interface Yesim {
+password: string;
+login: string;
+secondKey: string;
+}
