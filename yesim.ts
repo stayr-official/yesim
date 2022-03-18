@@ -1,9 +1,7 @@
+import { Yesim } from "typings";
 import { yesim } from "./lib";
-const Yesim = (data: {
-  password: string;
-  login: string;
-  secondKey: string;
-}) => {
+const Yesim = (data:Yesim) => {
+
   if (!data.password) {
     throw new Error("key [password] is required");
   }
